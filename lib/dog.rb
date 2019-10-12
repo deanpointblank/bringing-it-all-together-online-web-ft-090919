@@ -68,4 +68,8 @@ class Dog
     end.first
   end
   
+  def self.create(name, breed)
+    
+  end
+  
 end
