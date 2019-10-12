@@ -40,6 +40,7 @@ class Dog
       
       DB[:conn].execute(sql)
     end
+    self
   end
   
   def update
