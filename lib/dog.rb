@@ -54,11 +54,11 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
   
-  def self.new_from_db
-    sql = <<-SQL
-      SELECT *
-      FROM dogs
-    SQL
+  def self.new_from_db(row)
+    # sql = <<-SQL
+    #   SELECT *
+    #   FROM dogs
+    # SQL
     
     DB[:conn].execute(sql).map do |row|
       new_dog = self.new
