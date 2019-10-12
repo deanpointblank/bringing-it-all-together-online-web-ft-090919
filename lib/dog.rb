@@ -48,7 +48,8 @@ class Dog
   
   def update
     sql <<-SQL
-      UPDATE
+      UPDATE dogs
+      SET 
     SQL
   end
   
