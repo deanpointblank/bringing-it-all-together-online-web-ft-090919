@@ -31,6 +31,7 @@ class Dog
   
   def save
     if self.id
+      self
       
   end
   
