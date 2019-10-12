@@ -33,6 +33,7 @@ class Dog
     if self.id
       self.update
     else
+      binding.pry
       sql = <<-SQL
       INSERT INTO dogs (name, breed)
       VALUES (?, ?);
