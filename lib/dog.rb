@@ -70,8 +70,8 @@ class Dog
   
   def self.create(name:, breed:)
     new_dog = self.new
-    @name = name
-    @breed = breed
+    new_dog.name = name
+    new_deg.breed = breed
     new_dog.save
   end
   
