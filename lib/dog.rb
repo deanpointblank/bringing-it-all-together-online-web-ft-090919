@@ -56,11 +56,11 @@ class Dog
   
   def self.new_from_db(row)
     #binding.pry
-    new_dog = self.new
+    self.new
     @id = row[0]
-    new_dog.name = row[1]
-    new_dog.breed = row[2]
-    new_dog
+    @name = row[1]
+    @breed = row[2]
+    self
   end
   
   def self.create(name:, breed:)
