@@ -47,7 +47,9 @@ class Dog
   end
   
   def update
-    
+    sql <<-SQL
+      UPDATE
+    SQL
   end
   
   def self.new_from_db
