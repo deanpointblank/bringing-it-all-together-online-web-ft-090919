@@ -29,8 +29,9 @@ class Dog
     DB[:conn].execute(sql)
   end
   
-  def save(id, name, breed)
-    
+  def save
+    if self.id
+      
   end
   
   def self.new_from_db
