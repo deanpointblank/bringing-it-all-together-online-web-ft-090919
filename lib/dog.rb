@@ -82,7 +82,8 @@ class Dog
   end
   
   def self.find_or_create_by(name:, breed:)
-    
+    song = DB[:conn].execute(
+      )
   end
   
 end
